@@ -1,12 +1,9 @@
 {
-    "name": "wellmed/ms-apotek",
+    "name": "wellmed-lite/ms-apotek",
     "autoload": {
         "psr-4": {
-            "Wellmed\\MsApotek\\": "src/"
-        },
-        "files":[
-            "src/helper.php"
-        ]
+            "WellmedLite\\MsApotek\\": "src/"
+        }
     },
     "authors": [
         {
@@ -17,21 +14,15 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Wellmed\\MsApotek\\Providers\\MsApotekServiceProvider"
+                "WellmedLite\\MsApotek\\MsApotekServiceProvider"
             ]
         }
     },
     "require": {
+        "wellmed-lite/ms-point-of-sale": "dev-main",
+        "wellmed-lite/ms-emr": "dev-main",
+        "wellmed-lite/ms-scm": "dev-main"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": {
-        "hanafalah/module-support": {
-            "type": "path",
-            "url": "../../repositories/module-support",
-            "options": {
-                "symlink": true
-            }
-        }
-    }
+    "prefer-stable": false
 }
