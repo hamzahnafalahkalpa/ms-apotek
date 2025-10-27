@@ -11,13 +11,6 @@
             "email": "hamzahnafalah@gmail.com"
         }
     ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "WellmedLite\\MsApotek\\MsApotekServiceProvider"
-            ]
-        }
-    },
     "require": {
         "wellmed-lite/ms-point-of-sale": "dev-main",
         "wellmed-lite/ms-emr": "dev-main",
